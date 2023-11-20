@@ -13,8 +13,7 @@ const searchCode = () => {
            })
            .catch(error => {
                console.error("Klaida:", error);
-               // Display error message
-               document.querySelector('.error-message').textContent = " Tokio miesto nėra";
+               document.querySelector('.error').textContent = " Tokio miesto nėra";
            });
    });
 }

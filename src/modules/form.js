@@ -1,6 +1,6 @@
 const form = ()=>{
     return `
-    <div class="error-message">
+    <div class="error">
     </div>
     <div class="form-group">
         <input type="text" class="form-control city" placeholder="Miestas">

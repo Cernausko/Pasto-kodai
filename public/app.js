@@ -50,7 +50,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var form = function form() {
-  return "\n    <div class=\"error-message\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control city\" placeholder=\"Miestas\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control term\" placeholder=\"Jusu adresas\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control result\" readonly>\n    </div>\n    <div class=\"form-group\">\n        <button type=\"submit\" class=\"btn btn-success\">Ieskoti</button>\n    </div>\n    ";
+  return "\n    <div class=\"error\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control city\" placeholder=\"Miestas\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control term\" placeholder=\"Jusu adresas\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control result\" readonly>\n    </div>\n    <div class=\"form-group\">\n        <button type=\"submit\" class=\"btn btn-success\">Ieskoti</button>\n    </div>\n    ";
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);
 
@@ -104,8 +104,7 @@ var searchCode = function searchCode() {
       document.querySelector('.result').value = postalCode;
     })["catch"](function (error) {
       console.error("Klaida:", error);
-      // Display error message
-      document.querySelector('.error-message').textContent = " Tokio miesto nėra";
+      document.querySelector('.error').textContent = " Tokio miesto nėra";
     });
   });
 };
